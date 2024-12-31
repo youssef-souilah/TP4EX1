@@ -8,18 +8,18 @@ public class PointNom3D extends Point3D {
 	}
 	@Override
 	public void affCoord () {
-		System.out.println( "Coordonnées :"+ "x= "+this.x+"y= "+this.y+"z= "+this.z+"nom= "+this.nom) ; 
+		System.out.println( "Coordonnées :"+ "x= "+this.getX()+"y= "+this.getZ()+"z= "+this.getZ()+"nom= "+this.nom) ; 
 	}
 	public void tranlate (double x, double y, double z) {
-		this.x=x;
-		this.y=y;
-		this.z=z;
+		setX(x);
+		setY(y);
+		setZ(z);
 	}
 	
 	public boolean equals (PointNom3D o) {
 		//option 1
 		//return o.equals(this);
 		//option 2
-		return (this.nom==o.nom&&this.x==o.x&&this.y==o.y&&this.z==o.z);
+		return (this.nom==o.nom&&this.getX()==o.getX()&&this.getY()==o.getY()&&this.getZ()==o.getZ());
 	}
 }
