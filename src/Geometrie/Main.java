@@ -1,5 +1,8 @@
 package Geometrie;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -21,8 +24,35 @@ public class Main {
 			
 			EX7 
 			oui on peut afficher les points dons une boucle
+			
+			EX8
+		  	List<Point> l1=new ArrayList<Point>();
+			l1.add(new Point(0,5));
+			l1.add(new Point(0,6));
+			l1.add(new Point3D(0,5,2));
+			l1.add(new Point3D(0,6,1));
+			l1.add(new PointNom3D(0,5,3,"p5"));
+			l1.add(new PointNom3D(0,6,2,"p6"));
+			
+			for(Point p:l1) {
+				p.affCoord();
+			}
+			 
+			EX12 il faut modifier this.attribut par l'utilisation de les getters et setters
 		 * 
 		 */
+		
+		List<Point> l1=new ArrayList<Point>();
+		l1.add(new Point(0,5));
+		l1.add(new Point(0,6));
+		l1.add(new Point3D(0,5,2));
+		l1.add(new Point3D(0,6,1));
+		l1.add(new PointNom3D(0,5,3,"p5"));
+		l1.add(new PointNom3D(0,6,2,"p6"));
+		
+		for(Point p:l1) {
+			p.affCoord();
+		}
 		
 	}
 
